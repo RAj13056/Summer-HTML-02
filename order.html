@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nofollow, noindex">
+    <meta name="description" content="This is the orders page">
+    <title>Order Pizza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,
+400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family
+=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="https://th.bing.com/th/id/OIP.nPHrefOIgoFCXGfFx_XjuQHaE8?w=241&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="navbar logo">
+        </div>
+        <nav>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="order-btn"><a href="order.html">Order</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="form_container">
+                <form action="somephpfile" method="post">
+
+                    <div class="row">
+                        <div class="box">
+                            <div class="inside">
+                                <h2>Personal Information</h2>
+
+                                <label for=""><b>FirstName : </b></label>
+                                <input type="text" placeholder="FirstName" name="fname"><br>
+
+                                <label for=""><b>LastName : </b></label>
+                                <input type="text" placeholder="LastName" name="lname"><br>
+
+                                <label for=""><b>Email : </b></label>
+                                <input type="email" placeholder="Enter email" name="email"><br>
+
+                                <label for=""><b>Age : </b></label>
+                                <input type="number" placeholder="Age" name="age"> <br>
+
+                                <label for=""><b>Phone Number : </b></label>
+                                <input type="tel" placeholder="Contact Number" name="number"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                            </div>
+
+                        </div>
+
+                        <div class="box">
+                            <div class="inside">
+                                <h2>Residential Information</h2>
+
+                                <label for=""><b>Street Number : </b></label>
+                                <input type="number" placeholder="Enter street number" name="street_number"><br>
+
+                                <label for=""><b>Street Name : </b></label>
+                                <input type="text" placeholder="Enter street name" name="street_name"><br>
+
+                                <label for=""><b>City : </b></label>
+                                <input type="text" placeholder="City" name="city"><br>
+
+                                <label for=""><b>Postal Code : </b></label>
+                                <input type="text" placeholder="Postal Code" name="postal_code"><br>
+
+                                <label for=""><b>Province : </b></label>
+                                <select name="" id="">
+                                    <option value="">Select Province</option>
+                                    <option value="">Ontario</option>
+                                    <option value="">British Columbia</option>
+                                    <option value="">Northwest Territories</option>
+                                    <option value="">Alberta</option>
+                                    <option value="">New Brunswick</option>
+                                    <option value="">Newfoundland and Labrador</option>
+                                    <option value="">Nunavut</option>
+                                    <option value="">Manitoba</option>
+                                    <option value="">Quebec</option>
+                                    <option value="">Yukon</option>
+                                    <option value="">Prince Edward Island</option>
+                                    <option value="">Saskatchewan</option>
+                                </select>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row1">
+                        <h2 align="center">Order Details</h2>
+                        <div class="order_content">
+
+                            <div class="inside_box">
+                                <label for=""><b>Pizza Size : </b></label>
+                                <select name="" id="">
+                                    <option value="">Size</option>
+                                    <option value="">Small</option>
+                                    <option value="">Medium</option>
+                                    <option value="">Large</option>
+                                    <option value="">Extra Large</option>
+                                </select>
+                                <br>
+
+                                <label for=""><b>Crust Type : </b></label>
+                                <select name="" id="">
+                                    <option value="">Crust Type</option>
+                                    <option value="">Thin</option>
+                                    <option value="">Regular</option>
+                                    <option value="">Thick</option>
+                                    <option value="">Stuffed</option>
+                                </select>
+
+                                <br>
+                                <label for=""><b>Toppings : </b></label>
+                                <input type="checkbox">Pepperoni
+                                <input type="checkbox">Sausage
+                                <input type="checkbox">Mushrooms
+                                <input type="checkbox">Onions
+                                <input type="checkbox">Tomatoes
+                                <input type="checkbox">Paneer
+                                <br>
+
+                                <label for=""><b>Pizza Sauce :</b> </label>
+                                <input type="checkbox">Tomato
+                                <input type="checkbox">Alfredo
+                                <input type="checkbox">Pesto
+                                <input type="checkbox">BBQ
+                                <br>
+
+                                <label for=""><b>Cheese Level : </b></label>
+                                <input type="radio" name="cheese">
+                                <label for="">Light</label>
+
+                                <input type="radio" name="cheese">
+                                <label for="">Regular</label>
+
+                                <input type="radio" name="cheese">
+                                <label for="">Extra</label>
+                                <br>
+
+                                <label for=""><b>Pizza Type : </b></label>
+                                <input type="radio" name=type>
+                                <label for="">Vegetarian</label>
+                                <input type="radio" name="type">
+                                <label for="">Non-Vegetarian</label><br>
+
+                                <label for=""><b>Payment Method : </b></label>
+                                <input type="radio" name="payment">
+                                <label for="">Credit Card</label>
+                                
+                                <input type="radio" name="payment">
+                                <label for="">Cash On Delivery</label>
+
+                                <input type="radio" name="payment">
+                                <label for="">Debit Card</label>
+
+                                <input type="radio" name="payment">
+                                <label for="">PayPal</label>
+                                <br><br>
+
+                                <div class="btn_container">
+                                <button type="submit" value="Order" class="btn">
+                                    Order
+                                </button>
+                            </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <h4 align="center">&#169; All Copyrights Reserved</h4>
+    </footer>
+
+
+</body>
+
+</html>
